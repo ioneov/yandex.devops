@@ -11,7 +11,7 @@ python3 untargz.py
 
 ## How it works
 
-![](https://github.com/ioneov/yandex.devops/file.gif)
+![](https://github.com/ioneov/yandex.devops/blob/main/file.gif)
 
 For Windows hosts.
 
