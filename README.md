@@ -1,6 +1,6 @@
 # yandex.devops
 
-tar.gz unzipper for for yandex devops course
+The script extracts recursive \*.tar.gz archives for for yandex devops course.
 
 ## Usage
 
@@ -12,8 +12,6 @@ python3 untargz.py
 
 ## How it works
 
-![](https://github.com/ioneov/yandex.devops/blob/main/file.gif)
-
-For Windows hosts.
+<img src="https://github.com/ioneov/yandex.devops/blob/main/file.gif" width="700">
 
 ### GL HF
