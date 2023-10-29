@@ -3,28 +3,31 @@ from os import listdir
 import tarfile
 import sys
 
-root = 'D:\\05\\gz\\'
+ROOT_DIR = 'D:\\05\\gz\\'
 
 
 def extract_file():
-    for i in listdir(root):
+    """
+    The script extracts recursive *.tar.gz archives
+    """
+    for i in listdir(ROOT_DIR):
         file = i
         if file == 'secret-word.txt':
             sys.exit()
         elif file.endswith("tar.gz"):
             try:
-                tar = tarfile.open(root + file, "r:gz")
+                tar = tarfile.open(ROOT_DIR + file, "r:gz")
                 try:
-                    tar.extractall(path=root)
+                    tar.extractall(path=ROOT_DIR)
                 finally:
                     tar.close()
             finally:
-                os.remove(root + file)
+                os.remove(ROOT_DIR + file)
         elif file.endswith("tar"):
             try:
-                tar = tarfile.open(root + file, "r:")
+                tar = tarfile.open(ROOT_DIR + file, "r:")
                 try:
-                    tar.extractall(path=root)
+                    tar.extractall(path=ROOT_DIR)
                 finally:
                     tar.close()
             finally:
